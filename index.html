@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Простой сайт с регистрацией</title>
+  <script>
+    function register() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+      // Ваш код для обработки регистрации здесь
+      // Например, можно сохранить данные в localStorage или отправить на сервер
+      
+      alert("Регистрация прошла успешно!");
+    }
+  </script>
+</head>
+<body>
+  <h1>Регистрация</h1>
+  
+  <form>
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" required><br>
+    
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" required><br>
+    
+    <button type="button" onclick="register()">Зарегистрироваться</button>
+  </form>
+</body>
+</html>
